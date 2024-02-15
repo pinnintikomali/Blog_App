@@ -37,7 +37,7 @@ public class Post {
     private String content;
 
     @OneToMany(mappedBy = "post", cascade = CascadeType.ALL,orphanRemoval = true)
-    private Set<Comment> comments = new HashSet<>();//Set not allowed the duplicates.
+    private Set<Comment> comments = new HashSet<>();//Set not allowed the duplicates. // two edit
 
 }
 
